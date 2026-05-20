@@ -6,7 +6,7 @@ app.use(express.json());
 
 // 🔑 ТВОИ ДАННЫЕ
 const TOKEN = "YOUR_GITHUB_TOKEN";
-const REPO = "USERNAME/REPO_NAME";
+const REPO = "nikita_47475";
 
 app.post("/publish", async (req, res) => {
   const { ip, device } = req.body;
