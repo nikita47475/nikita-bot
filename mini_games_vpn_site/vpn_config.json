@@ -1,0 +1,9 @@
+{
+  "server_host": "YOUR_SERVER_IP",
+  "server_port": 8443,
+  "token": "change-this-long-random-secret",
+  "listen_host": "127.0.0.1",
+  "listen_port": 1080,
+  "insecure": true,
+  "ca_file": ""
+}

@@ -1,0 +1,59 @@
+<script>
+  // Зацифрованная структура сайта (теги, классы, пути к файлам)
+  var _0x8f4d = [
+    decodeURIComponent('%3C%21doctype%20html%3E%0A%3Chtml%20lang%3D%22ru%22%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0A%20%20%3Cmeta%20name%3D%22viewport%22%20content%3D%22width%3Ddevice-width%2C%20initial-scale%3D1%22%3E%0A%20%20%3Ctitle%3E'),
+    decodeURIComponent('%3C/title%3E%0A%20%20%3Clink%20rel%3D%22stylesheet%22%20href%3D%22styles.css%22%3E%0A%3C/head%3E%0A%3Cbody%3E%0A%20%20%3Cmain%20class%3D%22app-shell%22%3E%0A%20%20%20%20%3Cheader%20class%3D%22topbar%22%3E%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22brand%22%3E%0A%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22brand-main%22%3E'),
+    decodeURIComponent('%3C/span%3E%0A%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22brand-sub%22%3E'),
+    decodeURIComponent('%3C/span%3E%0A%20%20%20%20%20%20%3C/div%3E%0A%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22top-image%22%3E%0A%20%20%20%20%20%20%20%20%3Cimg%20id%3D%22heroImage%22%20src%3D%22assets/logo.png%22%20onerror%3D%22this.onerror%3Dnull%3Bthis.src%3D%27assets/placeholder.svg%27%3B%22%20alt%3D%22'),
+    decodeURIComponent('%22%3E%0A%20%20%20%20%20%20%3C/div%3E%0A%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22user-badge%22%3E%0A%20%20%20%20%20%20%20%20%3Cspan%3E'),
+    decodeURIComponent('%3C/span%3E%0A%20%20%20%20%20%20%20%20%3Cstrong%3E'),
+    decodeURIComponent('%3C/strong%3E%0A%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%3C/header%3E%0A%0A%20%20%20%20%3Csection%20class%3D%22vpn-panel%22%20aria-label%3D%22'),
+    decodeURIComponent('%22%3E%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22status-ring%22%20id%3D%22statusRing%22%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cspan%20id%3D%22statusText%22%3E'),
+    decodeURIComponent('%3C/span%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cstrong%20id%3D%22protectionText%22%3E'),
+    decodeURIComponent('%3C/strong%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%3C/div%3E%0A%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22connection-grid%22%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22metric%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cspan%3E'),
+    decodeURIComponent('%3C/span%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cstrong%20id%3D%22realIp%22%3E192.168.0.24%3C/strong%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22metric%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cspan%3E'),
+    decodeURIComponent('%3C/span%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cstrong%20id%3D%22proxyIp%22%3E'),
+    decodeURIComponent('%3C/strong%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22metric%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cspan%3E'),
+    decodeURIComponent('%3C/span%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cstrong%20id%3D%22locationName%22%3E'),
+    decodeURIComponent('%3C/strong%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%3C/div%3E%0A%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22controls%22%3E%0A%20%20%20%20%20%20%20%20%3Cbutton%20id%3D%22connectButton%22%20class%3D%22primary-button%22%20type%3D%22button%22%3E'),
+    decodeURIComponent('%3C/button%3E%0A%20%20%20%20%20%20%20%20%3Cbutton%20id%3D%22changeIpButton%22%20class%3D%22secondary-button%22%20type%3D%22button%22%20disabled%3E'),
+    decodeURIComponent('%3C/button%3E%0A%20%20%20%20%20%20%3C/div%3E%0A%0A%20%20%20%20%20%20%3Cp%20class%3D%22backend-message%22%20id%3D%22backendMessage%22%3E'),
+    decodeURIComponent('%3C/p%3E%0A%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22network-list%22%20aria-label%3D%22'),
+    decodeURIComponent('%22%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22network-row%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cspan%3E'),
+    decodeURIComponent('%3C/span%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cstrong%20id%3D%22pcState%22%3E'),
+    decodeURIComponent('%3C/strong%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22network-row%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cspan%3E'),
+    decodeURIComponent('%3C/span%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cstrong%20id%3D%22browserState%22%3E'),
+    decodeURIComponent('%3C/strong%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22network-row%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cspan%3E'),
+    decodeURIComponent('%3C/span%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cstrong%20id%3D%22wifiState%22%3E'),
+    decodeURIComponent('%3C/strong%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%3C/section%3E%0A%20%20%3C/main%3E%0A%0A%20%20%3Cscript%20src%3D%22app.js%22%3E%3C/script%3E%0A%3C/body%3E%0A%3C/html%3E')
+  ];
+
+  // Динамическая сборка страницы — все слова на русском языке открыты для браузера
+  document.write(
+    _0x8f4d[0] + "Компания мини-игры VPN" +
+    _0x8f4d[1] + "Компания мини-игры" +
+    _0x8f4d[2] + "VPN" +
+    _0x8f4d[3] + "Изображение VPN" +
+    _0x8f4d[4] + "Никита" +
+    _0x8f4d[5] + "VPN" +
+    _0x8f4d[6] + "VPN панель" +
+    _0x8f4d[7] + "VPN выключен" +
+    _0x8f4d[8] + "Сеть не защищена" +
+    _0x8f4d[9] + "Текущий IP" +
+    _0x8f4d[10] + "Прокси IP" +
+    _0x8f4d[11] + "Не выбран" +
+    _0x8f4d[12] + "Локация" +
+    _0x8f4d[13] + "Ожидание" +
+    _0x8f4d[14] + "Запустить VPN" +
+    _0x8f4d[15] + "Сменить IP" +
+    _0x8f4d[16] + "Локальный Python-контроллер не подключен" +
+    _0x8f4d[17] + "Защищаемые устройства" +
+    _0x8f4d[18] + "Компьютер" +
+    _0x8f4d[19] + "Ожидает" +
+    _0x8f4d[20] + "Браузер" +
+    _0x8f4d[21] + "Ожидает" +
+    _0x8f4d[22] + "Wi-Fi сеть" +
+    _0x8f4d[23] + "Требуется приложение" +
+    _0x8f4d[24]
+  );
+</script>
